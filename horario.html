@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversor de Horas del Evento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Conversor de Horas del Evento</h2>
+
+  <form id="formulario">
+    <label for="evento">Hora del evento (UTC):</label><br /><br />
+    <input type="datetime-local" id="evento" required />
+    <button type="submit">Mostrar horarios</button>
+  </form>
+
+  <div id="horas"></div>
+
+  <div id="botonesCopiar" style="display:none;">
+    <button id="copiarEmojis">Copiar con emojis</button>
+    <button id="copiarTexto">Copiar solo texto</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
